@@ -1,0 +1,473 @@
+[
+ {
+  "id": "undo-my-life",
+  "type": "tee",
+  "title": "Undo My Life Tee",
+  "description": "For when one Ctrl+Z just isn't enough.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": [
+   "Windows",
+   "Mac"
+  ],
+  "variants": [
+   {
+    "keyboard": "Windows",
+    "colour": "White",
+    "image": "img/undo-my-life-windows-white.jpg",
+    "sku": "01-undo-win-white"
+   },
+   {
+    "keyboard": "Windows",
+    "colour": "Black",
+    "image": "img/undo-my-life-windows-black.jpg",
+    "sku": "01-undo-win-black"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "White",
+    "image": "img/undo-my-life-mac-white.jpg",
+    "sku": "01-undo-mac-white"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "Black",
+    "image": "img/undo-my-life-mac-black.jpg",
+    "sku": "01-undo-mac-black"
+   }
+  ]
+ },
+ {
+  "id": "quit-my-problems",
+  "type": "tee",
+  "title": "Quit My Problems Tee",
+  "description": "Closes every open problem in one keystroke. Results may vary.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": [
+   "Windows",
+   "Mac"
+  ],
+  "variants": [
+   {
+    "keyboard": "Windows",
+    "colour": "White",
+    "image": "img/quit-my-problems-windows-white.jpg",
+    "sku": "02-quit-win-white"
+   },
+   {
+    "keyboard": "Windows",
+    "colour": "Black",
+    "image": "img/quit-my-problems-windows-black.jpg",
+    "sku": "02-quit-win-black"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "White",
+    "image": "img/quit-my-problems-mac-white.jpg",
+    "sku": "02-quit-mac-white"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "Black",
+    "image": "img/quit-my-problems-mac-black.jpg",
+    "sku": "02-quit-mac-black"
+   }
+  ]
+ },
+ {
+  "id": "copy-paste-degree",
+  "type": "tee",
+  "title": "Copy Paste My Entire Degree Tee",
+  "description": "Four years of hard work. Two shortcuts.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": [
+   "Windows",
+   "Mac"
+  ],
+  "variants": [
+   {
+    "keyboard": "Windows",
+    "colour": "White",
+    "image": "img/copy-paste-degree-windows-white.jpg",
+    "sku": "03-copy-win-white"
+   },
+   {
+    "keyboard": "Windows",
+    "colour": "Black",
+    "image": "img/copy-paste-degree-windows-black.jpg",
+    "sku": "03-copy-win-black"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "White",
+    "image": "img/copy-paste-degree-mac-white.jpg",
+    "sku": "03-copy-mac-white"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "Black",
+    "image": "img/copy-paste-degree-mac-black.jpg",
+    "sku": "03-copy-mac-black"
+   }
+  ]
+ },
+ {
+  "id": "force-quit-monday",
+  "type": "tee",
+  "title": "Force Quit My Monday Tee",
+  "description": "Monday has stopped responding. End task?",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": [
+   "Windows",
+   "Mac"
+  ],
+  "variants": [
+   {
+    "keyboard": "Windows",
+    "colour": "White",
+    "image": "img/force-quit-monday-windows-white.jpg",
+    "sku": "04-monday-win-white"
+   },
+   {
+    "keyboard": "Windows",
+    "colour": "Black",
+    "image": "img/force-quit-monday-windows-black.jpg",
+    "sku": "04-monday-win-black"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "White",
+    "image": "img/force-quit-monday-mac-white.jpg",
+    "sku": "04-monday-mac-white"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "Black",
+    "image": "img/force-quit-monday-mac-black.jpg",
+    "sku": "04-monday-mac-black"
+   }
+  ]
+ },
+ {
+  "id": "save-before-too-late",
+  "type": "tee",
+  "title": "Save Before It's Too Late Tee",
+  "description": "A life lesson every unsaved file has taught us.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": [
+   "Windows",
+   "Mac"
+  ],
+  "variants": [
+   {
+    "keyboard": "Windows",
+    "colour": "White",
+    "image": "img/save-before-too-late-windows-white.jpg",
+    "sku": "05-save-win-white"
+   },
+   {
+    "keyboard": "Windows",
+    "colour": "Black",
+    "image": "img/save-before-too-late-windows-black.jpg",
+    "sku": "05-save-win-black"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "White",
+    "image": "img/save-before-too-late-mac-white.jpg",
+    "sku": "05-save-mac-white"
+   },
+   {
+    "keyboard": "Mac",
+    "colour": "Black",
+    "image": "img/save-before-too-late-mac-black.jpg",
+    "sku": "05-save-mac-black"
+   }
+  ]
+ },
+ {
+  "id": "me-vs-my-pc",
+  "type": "tee",
+  "title": "Me vs My PC Tee",
+  "description": "Me: I would like to shut down. My PC: best I can do is update and restart.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": null,
+  "variants": [
+   {
+    "keyboard": null,
+    "colour": "White",
+    "image": "img/me-vs-my-pc-white.jpg",
+    "sku": "06-shutdown-white"
+   },
+   {
+    "keyboard": null,
+    "colour": "Black",
+    "image": "img/me-vs-my-pc-black.jpg",
+    "sku": "06-shutdown-black"
+   }
+  ]
+ },
+ {
+  "id": "cancel-cancel",
+  "type": "tee",
+  "title": "Cancel or Cancel Tee",
+  "description": "Every popup's idea of a choice.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": null,
+  "variants": [
+   {
+    "keyboard": null,
+    "colour": "White",
+    "image": "img/cancel-cancel-white.jpg",
+    "sku": "07-cancel-white"
+   },
+   {
+    "keyboard": null,
+    "colour": "Black",
+    "image": "img/cancel-cancel-black.jpg",
+    "sku": "07-cancel-black"
+   }
+  ]
+ },
+ {
+  "id": "sleep-exe",
+  "type": "tee",
+  "title": "Sleep.exe Stopped Working Tee",
+  "description": "Too many tabs open in brain. Try again tomorrow.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": null,
+  "variants": [
+   {
+    "keyboard": null,
+    "colour": "White",
+    "image": "img/sleep-exe-white.jpg",
+    "sku": "08-sleep-white"
+   },
+   {
+    "keyboard": null,
+    "colour": "Black",
+    "image": "img/sleep-exe-black.jpg",
+    "sku": "08-sleep-black"
+   }
+  ]
+ },
+ {
+  "id": "installing-motivation",
+  "type": "tee",
+  "title": "Installing Motivation Tee",
+  "description": "1% complete. Estimated time remaining: 3 years.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": null,
+  "variants": [
+   {
+    "keyboard": null,
+    "colour": "White",
+    "image": "img/installing-motivation-white.jpg",
+    "sku": "09-motivation-white"
+   },
+   {
+    "keyboard": null,
+    "colour": "Black",
+    "image": "img/installing-motivation-black.jpg",
+    "sku": "09-motivation-black"
+   }
+  ]
+ },
+ {
+  "id": "not-responding",
+  "type": "tee",
+  "title": "Me (Not Responding) Tee",
+  "description": "Please wait while this person comes back online.",
+  "price": 499,
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "colours": [
+   "White",
+   "Black"
+  ],
+  "keyboard": null,
+  "variants": [
+   {
+    "keyboard": null,
+    "colour": "White",
+    "image": "img/not-responding-white.jpg",
+    "sku": "10-notresp-white"
+   },
+   {
+    "keyboard": null,
+    "colour": "Black",
+    "image": "img/not-responding-black.jpg",
+    "sku": "10-notresp-black"
+   }
+  ]
+ },
+ {
+  "id": "vibe-coding-mug",
+  "type": "mug",
+  "title": "Vibe Coding Everything Mug",
+  "description": "Nothing can go wrong, right? 11 oz ceramic, printed on both sides.",
+  "price": 349,
+  "sizes": [
+   "11 oz"
+  ],
+  "colours": [
+   "White"
+  ],
+  "keyboard": null,
+  "variants": [
+   {
+    "keyboard": null,
+    "colour": "White",
+    "image": "img/vibe-coding-mug.jpg",
+    "sku": "mug-01-vibe-text"
+   }
+  ]
+ },
+ {
+  "id": "vibe-terminal-mug",
+  "type": "mug",
+  "title": "Vibe Code Terminal Mug",
+  "description": "0 tests written, 100% vibes, deployed to prod. 11 oz ceramic, printed on both sides.",
+  "price": 349,
+  "sizes": [
+   "11 oz"
+  ],
+  "colours": [
+   "White"
+  ],
+  "keyboard": null,
+  "variants": [
+   {
+    "keyboard": null,
+    "colour": "White",
+    "image": "img/vibe-terminal-mug.jpg",
+    "sku": "mug-02-terminal"
+   }
+  ]
+ },
+ {
+  "id": "deploy-popup-mug",
+  "type": "mug",
+  "title": "Deploy to Production? Mug",
+  "description": "Yes, or also yes. 11 oz ceramic, printed on both sides.",
+  "price": 349,
+  "sizes": [
+   "11 oz"
+  ],
+  "colours": [
+   "White"
+  ],
+  "keyboard": null,
+  "variants": [
+   {
+    "keyboard": null,
+    "colour": "White",
+    "image": "img/deploy-popup-mug.jpg",
+    "sku": "mug-03-deploy"
+   }
+  ]
+ }
+]

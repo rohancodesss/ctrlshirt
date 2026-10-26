@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ctrl+Shirt</title>
+<meta name="description" content="Funny tech tees and mugs, printed on demand and shipped across India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<div id="setup-warning" class="setup-warning" hidden></div>
+
+<header class="topbar">
+  <a href="#" class="brand" id="brand"></a>
+  <button class="cart-btn" id="open-cart" aria-label="Open cart">
+    <span class="kbd">Cart</span><span class="count" id="cart-count">0</span>
+  </button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 id="hero-title"></h1>
+    <p id="hero-tagline"></p>
+    <p class="hero-meta"><span>Made to order</span><span>Ships across India</span><span>Pay by UPI</span></p>
+  </section>
+
+  <nav class="filters" aria-label="Filter products">
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="tee">Tees</button>
+    <button class="chip" data-filter="mug">Mugs</button>
+  </nav>
+
+  <section class="grid" id="grid" aria-live="polite"></section>
+
+  <section class="faq">
+    <h2>Good to know</h2>
+    <details><summary>How do I pay?</summary><p>At checkout you'll get a UPI QR code and a button that opens your UPI app with the amount filled in. After paying, send us your order on WhatsApp with the UPI reference number.</p></details>
+    <details><summary>When will it arrive?</summary><p>Everything is printed after you order. Delivery usually takes <span class="delivery-days"></span> days.</p></details>
+    <details><summary>Returns?</summary><p>Because each item is printed for you, we can't take returns for size changes. If your item arrives damaged or misprinted, message us within 7 days with a photo and we'll replace it.</p></details>
+    <details><summary>Sizes</summary><p>Classic regular-fit cotton tees in S to XXL. Not sure which size? Message us on WhatsApp before you order.</p></details>
+  </section>
+</main>
+
+<footer class="footer"><span id="footer-name"></span> · Questions? <a id="footer-wa" target="_blank" rel="noopener">WhatsApp us</a></footer>
+
+<!-- product dialog -->
+<dialog id="product-dialog" class="sheet">
+  <form method="dialog" class="close-row"><button class="icon-btn" aria-label="Close">✕</button></form>
+  <div class="product-view">
+    <img id="pv-img" alt="">
+    <div class="pv-info">
+      <h2 id="pv-title"></h2>
+      <p class="price" id="pv-price"></p>
+      <p id="pv-desc" class="muted"></p>
+      <div id="pv-options"></div>
+      <div class="qty-row">
+        <label for="pv-qty">Qty</label>
+        <input id="pv-qty" type="number" min="1" max="10" value="1">
+      </div>
+      <button class="primary" id="pv-add">Add to cart</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- cart / checkout / pay -->
+<dialog id="cart-dialog" class="sheet">
+  <form method="dialog" class="close-row"><button class="icon-btn" aria-label="Close">✕</button></form>
+
+  <div id="step-cart">
+    <h2>Your cart</h2>
+    <ul id="cart-lines" class="lines"></ul>
+    <div class="totals" id="cart-totals"></div>
+    <button class="primary" id="to-checkout">Checkout</button>
+  </div>
+
+  <form id="step-details" hidden novalidate>
+    <h2>Delivery details</h2>
+    <label>Full name<input name="name" required autocomplete="name"></label>
+    <label>Phone (10 digits)<input name="phone" required inputmode="numeric" pattern="[6-9][0-9]{9}" autocomplete="tel-national"></label>
+    <label>Email (optional)<input name="email" type="email" autocomplete="email"></label>
+    <label>Address<textarea name="address" required rows="2" autocomplete="street-address"></textarea></label>
+    <div class="two">
+      <label>City<input name="city" required autocomplete="address-level2"></label>
+      <label>Pincode<input name="pincode" required inputmode="numeric" pattern="[1-9][0-9]{5}" autocomplete="postal-code"></label>
+    </div>
+    <label>State<input name="state" required autocomplete="address-level1"></label>
+    <p class="error" id="details-error" hidden></p>
+    <div class="row-btns">
+      <button type="button" class="ghost" id="back-to-cart">Back</button>
+      <button type="submit" class="primary">Continue to payment</button>
+    </div>
+  </form>
+
+  <div id="step-pay" hidden>
+    <h2>Pay by UPI</h2>
+    <p class="muted">Order <strong id="pay-order-id"></strong></p>
+    <p class="pay-amount" id="pay-amount"></p>
+    <div id="qr" class="qr" aria-label="UPI QR code"></div>
+    <a class="primary pay-btn" id="upi-link">Pay with UPI</a>
+    <p class="upi-id">UPI ID: <code id="pay-upi"></code> <button class="link-btn" id="copy-upi">Copy</button></p>
+    <ol class="steps">
+      <li>Scan the QR or tap the button and pay the exact amount.</li>
+      <li>Enter the 12-digit UPI reference (UTR) from your payment app.</li>
+      <li>Send the order to us on WhatsApp. We'll confirm once the payment shows up.</li>
+    </ol>
+    <label>UPI reference number<input id="utr" inputmode="numeric" maxlength="12" placeholder="e.g. 412345678901"></label>
+    <p class="error" id="pay-error" hidden></p>
+    <button class="primary" id="send-wa">Send order on WhatsApp</button>
+    <button class="ghost" id="copy-order">Copy order details</button>
+    <button class="link-btn" id="back-to-details">Edit delivery details</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>
